@@ -1,0 +1,82 @@
+body{
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+#header h1{
+    text-align: center;
+    color:green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+}
+table{
+    width: 100%;
+    background-color: #90EE90;
+    border-collapse: collapse;  
+}
+tr,td{
+    border: 1px solid #000;
+    border-collapse: collapse;  
+}
+#content .left{
+    color: green;
+    text-align: left;
+}
+.tien{
+    padding:0.5% 0;
+    line-height: 2;
+    color: green;
+}
+.chon_sp{
+    color: green;
+    margin-left: 21%;
+}
+.adult_young{
+    display: flex;
+    justify-content: center;
+}
+.adult{
+    width: 30%;
+}
+.young{
+    width: 30%;
+}
+.adult_input{
+    width: 26%;
+}
+.young_input{
+    width: 26%;
+}
+.dang_nhap{
+    text-align: center;
+}
+.footer{
+    color: red;
+    text-align: center;
+}
+.name{
+    width: 90%;
+}
+.address{
+width: 70%;
+}
+.phone_number{
+width: 50%;
+}
+.select{
+    width: 65%;
+}
+.mien_bac{
+    font-weight: bold;
+}
+.textarea{
+    margin: 0px;
+    width: 223px;
+    height: 51px;
+    line-height: 0.7;
+}

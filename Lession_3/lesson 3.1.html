@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lesson 3.1.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <title>lesson 3.1</title>
+</head>
+<body>
+    <header id="header">
+        <h1>Đăng ký du lịch</h1>
+    </header>
+    <div id="content">
+        <form action="">
+            <table cellpadding="2" cellspacing="2">
+                <tr>
+                    <td class="left"><label for="ho_ten">Miền Bắc</label></td>
+                    <td class="right"><input class="name" type="text" value="Ngô Thúc Đạt" id="ho_ten"></td>
+                </tr>
+                <tr>
+                    <td class="left"><label for="add">Địa chỉ</label></td>
+                    <td class="right"><input id="add" class="address" type="text" value="2Bia Hùng Vương,Q10"></td>
+                </tr>
+                <tr>
+                    <td class="left"><label for="number">Phone number</label></td>
+                    <td class="right"><input id="number" class="phone_number" type="text" value="0964526985"></td>
+                </tr>
+                <tr>
+                    <td class="left"><label for="checkbox">Khách Việt Nam</label></td>
+                    <td class="right"><input id="checkbox" type="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="left"><label for="option">Chọn tour</label></td>
+                    <td class="right">
+                        <select class="select" name="" id="option">
+                           <optgroup label="Miền Bắc">
+                            <option  class="margin_left" value="" selected>Nha Trang - Đà Lạt</option>
+                            <option  class="margin_left" value="">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                           </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">Phương tiện</td>
+                    <td class="left"><input type="radio" id="aircraft" checked name="radio"> <label for="aircraft">Máy bay</label> <input type="radio" id="oto" name="radio"> <label for="oto">Ô tô</label></td>
+                </tr>
+                <tr>
+                    <td class="tien" colspan="2">
+                      <fieldset style="width:500px;margin: 0 auto;">
+                          <legend>Chọn sản phẩm tham gia</legend>
+                          <div class="adult_young">
+                              <div class="adult"><label for="ng_lon">Người lớn</label> <input id="ng_lon" type="number" value="6" class="adult_input"></div>
+                              <div class="young"><label for="tr_em">Trẻ em</label> <input id="tr_em" type="number" value="4" class="young_input"></div>
+                          </div>
+                      </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left"><label for="note">Ghi chú thêm</label></td>
+                    <td class="right">
+                        <textarea class="textarea" name="" id="note" cols="30" rows="10">
+                            Có 2 trẻ em dưới 6 tuổi
+                            Có 2 người ăn chay
+                        </textarea>
+                    </td>
+                </tr>
+                <tr class="dang_nhap">
+                    <td colspan="2">
+                        <input type="submit" value="Đăng ký" name="btn" id="form-btn" class="btn center" onclick="register()">
+                    </td>
+                </tr>
+                <tr id="text">
+
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function register() {
+            const tr = document.getElementById("text")
+            const td = document.createElement("td")
+            td.setAttribute("colspan", "2")
+            tr.appendChild(td)
+            const p = document.createElement("p")
+            p.setAttribute("class", "registed")
+            p.textContent += "Bạn đã đăng ký thành công!!!"
+            td.appendChild(p)
+        }
+    </script>   
+</body>
+</html>
