@@ -1,21 +1,20 @@
-// in số nguyên tố từ 1 đến n
-function inSoNguyenTo(n); {
-    for (number = 2; number < n; number++) {
-        function checkPrime(number) {
-            let flag = true;
-            beark;
-            for (let i = 2; i < number - 1; i++) {
-                if (number % i == 0) {
-                    flag = false;
-                }
-            }
-
-            if (flag == true) {
-                console.log(number);
-
-            }
+    
+    let n = 16;
+    let x;
+    console.log('Bài 4: in số nguyên tố từ 1 đến '+ n );
+function KTSNT(x){
+    for(let i=2;i<=Math.sqrt(x);i++)
+    {
+        if(x%i==0)
+        {
+            return false;
         }
     }
+    return true;
 }
-
-inSoNguyenTo(15)
+for(let i=2;i<=n;i++){
+    if(KTSNT(i))
+    {
+        console.log(i);
+    }
+}

@@ -1,7 +1,6 @@
-function inSo(number)
-{   
-        for(let i=1;i<=number;i++){
-           console.log(i);
-        }   
+
+        console.log('Bài 1: In số');
+let a=5;
+for(let i=0;i<=a;i++){
+        console.log(i)
 }
-inSo(20)
