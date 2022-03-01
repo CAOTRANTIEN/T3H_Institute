@@ -3,7 +3,7 @@ console.log("bai 11")
 function countSpace(str) {
     return str.split(" ").length -1;
 }
-
+countSpace("f ssa a")
 console.log('bai 12');
 
 function removeSpace(str) {
