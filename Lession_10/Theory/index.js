@@ -61,7 +61,7 @@
 // // newArray.splice(newArray.length, 0, "Duong", "Honh");
 // // newArray.reverse();
 // let valueSlice = newArray.slice(1);
-// // slice: cắt mảng, trả về mảng mới đã cắt, mảng ban đầu ko thay đổi
+// // slice: cắt mảng, trả về mảng mới đã cắt, mảng ban đầu ko thay đổi 
 // // console.log(newArray, valueSlice);
 
 // // concat => ghép mảng
@@ -156,15 +156,35 @@
 
 
 
-// Example
-let newArray=['hong','tung','xoan','truong'];
-// let valueSlice=newArray.slice(3);
-// console.log(newArray,valueSlice);
-let arr0=[1,2,3];
-// let valueConcat=newArray.concat("duong");
-// console.log(newArray,valueConcat); 
-// console.log(Array.isArray(arr0));
-for (let index = 0; index < newArray.length; index++){
-  const element = newArray[index];
-  console.log(element,index);
-}
+// Practice
+
+        // console.log("bài 1");
+// let a= [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1] ;
+// let total=a.reduce((a,b)=>{
+//     return a+b;
+// },0)
+// console.log(total);
+
+        // // console.log("bài 2");
+// let b = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1];
+// let maxInNumber=Math.max.apply(Math,b);
+// let minInNumber=Math.min.apply(Math,b);
+// console.log("Giá trị lớn nhất là:" + maxInNumber);
+// console.log("Giá trị nhỏ nhất là:" + minInNumber);
+// let sum=b.reduce((a,b)=>{
+//    return a+b;
+// },0)
+// console.log("Giá trị trung bình của mảng là:" + sum/b.length);
+
+        // // console.log("bài 3");
+// let b3 = [1,2,3,2,3,4,6,7];
+// for (let index = 0; index < b3.length; index++) {
+//     const element = b3[index];
+//     console.log(element, index);
+ 
+        // // console.log("bài 4");    
+// let b4 = [1,2,3,2,3,4,6,7] 
+// let value_b4=b4.map(index=>Math.pow(index,2));
+// console.log(value_b4);
+
+
